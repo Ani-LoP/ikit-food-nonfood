@@ -23,22 +23,22 @@ stages:
       size: 8311871
       nfiles: 100
     - path: train.py
-      md5: 7b8aa5d89fe1591a4aa53ea319345bd4
+      md5: 32b86b5d3d044919bc402ee8101e118f
       size: 3259
     outs:
     - path: model/my_model.h5
-      md5: 4aea28d41c56c4bbc0e205d7b3c614c4
+      md5: e3308cf0a0d978bb53be5dbee70c5af2
       size: 104861928
   test:
     cmd: python test.py
     deps:
     - path: model/my_model.h5
-      md5: 4aea28d41c56c4bbc0e205d7b3c614c4
+      md5: e3308cf0a0d978bb53be5dbee70c5af2
       size: 104861928
     - path: test.py
       md5: 50aa20d4e5f98c32db55b403b889c3f0
       size: 723
     outs:
     - path: test.txt
-      md5: 3a14f32be1f6ef22c8af82f03022b93f
-      size: 24
+      md5: 0b43eb8de89252c47ea1e18ce10b4052
+      size: 21
