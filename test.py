@@ -23,4 +23,4 @@ res = model.evaluate(
     batch_size=10
 )
 file = open("test.txt", "w")
-file.write(res[0] + ' ' + res[1])
+file.write(str(res[0]) + ' ' + str(res[1]))

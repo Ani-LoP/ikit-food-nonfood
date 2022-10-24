@@ -13,3 +13,10 @@ stages:
     - train.py
     outs:
     - model/my_model.h5
+  test:
+    cmd: python test.py
+    deps:
+    - model/my_model.h5
+    - test.py
+    outs:
+    - test.txt
