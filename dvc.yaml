@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python prepare.py
+    deps:
+    - data/data
+    - prepare.py
+    outs:
+    - data/prepared_data
