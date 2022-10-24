@@ -1,7 +1,7 @@
 import os
 import tensorflow as tf
 
-path = os.path.abspath('D:\\learn\\IKIT\\PI\\7-semestr\\teh-anal-dann\\2\\pr2')
+path = os.path.abspath('D:\\learn\\IKIT\\PI\\7-semestr\\teh-anal-dann\\2\\prac2')
 train_data = os.path.join(path, 'data', 'prepared_data', 'train')
 valid_data = os.path.join(path, 'data', 'prepared_data', 'val')
 test_data = os.path.join(path, 'data', 'prepared_data', 'test')
