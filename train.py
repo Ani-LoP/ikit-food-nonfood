@@ -7,7 +7,7 @@ valid_data = os.path.join(path, 'data', 'prepared_data', 'val')
 test_data = os.path.join(path, 'data', 'prepared_data', 'test')
 
 batch_size = 10
-epochs = 1
+epochs = 3
 
 
 traindata_generator=tf.keras.preprocessing.image.ImageDataGenerator(
