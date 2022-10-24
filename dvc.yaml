@@ -6,3 +6,10 @@ stages:
     - prepare.py
     outs:
     - data/prepared_data
+  train:
+    cmd: python train.py
+    deps:
+    - data/prepared_data
+    - train.py
+    outs:
+    - model/my_model.h5

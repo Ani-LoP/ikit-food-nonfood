@@ -15,3 +15,17 @@ stages:
       md5: 7483a6e99eb1624f6bbbd3e027c1979f.dir
       size: 8311871
       nfiles: 100
+  train:
+    cmd: python train.py
+    deps:
+    - path: data/prepared_data
+      md5: 7483a6e99eb1624f6bbbd3e027c1979f.dir
+      size: 8311871
+      nfiles: 100
+    - path: train.py
+      md5: 7b8aa5d89fe1591a4aa53ea319345bd4
+      size: 3259
+    outs:
+    - path: model/my_model.h5
+      md5: 4aea28d41c56c4bbc0e205d7b3c614c4
+      size: 104861928
